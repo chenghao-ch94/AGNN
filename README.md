@@ -44,3 +44,14 @@ python train_classifier.py --config configs/train_classifier_mini.yaml
 ```
 python train_meta.py --config configs/train_meta_mini.yaml
 ```
+
+
+
+## Acknowledgment
+We thank the following repos providing helpful components/functions in our work.
+- [Few-shot GNN](https://github.com/vgsatorras/few-shot-gnn)
+
+- [Transductive Propagation Network](https://github.com/csyanbin/TPN)
+
+- [Few-shot Meta-Baseline](https://github.com/yinboc/few-shot-meta-baseline)
+
