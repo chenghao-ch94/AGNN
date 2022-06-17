@@ -33,7 +33,8 @@ python train_classifier.py --config configs/train_classifier_mini.yaml
 ```
 The pretrained Classifier-Baselines can be downloaded from Google Drive. You can unzip and place the foder under the 'save' folder.
 
-[Mini-ImageNet](https://drive.google.com/file/d/16kl3I6gCeKYFE-aIP67b-VW1g8XAA6-M/view?usp=sharing) [Tiered-ImageNet](https://drive.google.com/file/d/1M0xQaFl6Q5IBF9hmZveD9PmazFtOswDw/view?usp=sharing)
+[Mini-ImageNet](https://drive.google.com/file/d/16kl3I6gCeKYFE-aIP67b-VW1g8XAA6-M/view?usp=sharing) 
+[Tiered-ImageNet](https://drive.google.com/file/d/1M0xQaFl6Q5IBF9hmZveD9PmazFtOswDw/view?usp=sharing)
 
 
 ### 2. Training and Testing AGNN
