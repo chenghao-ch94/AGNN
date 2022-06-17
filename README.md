@@ -3,15 +3,6 @@
 This repository contains the code for [Attentive Graph Neural Networks for Few-Shot Learning]().
 
 
-### Citation
-```
-
-```
-
-## Main Results
-
-*The models on *miniImageNet* and *tieredImageNet* use ConvNet-4 as backbone, the channels in each block are **64-96-128-256**.
-
 ## Running the code
 
 ### Preliminaries
@@ -34,6 +25,8 @@ For Classifier-Baseline, we train with 4 GPUs on miniImageNet and tieredImageNet
 In following we take miniImageNet as an example. For other datasets, replace `mini` with `tiered` or `im800`.
 By default it is 1-shot, modify `shot` in config file for other shots. Models are saved in `save/`.
 
+*The models on *miniImageNet* and *tieredImageNet* use ConvNet-4 as backbone, the channels in each block are **64-96-128-256**.
+
 ### 1. Training Classifier-Baseline
 ```
 python train_classifier.py --config configs/train_classifier_mini.yaml
@@ -45,7 +38,10 @@ python train_classifier.py --config configs/train_classifier_mini.yaml
 python train_meta.py --config configs/train_meta_mini.yaml
 ```
 
+### Citation
+```
 
+```
 
 ## Acknowledgment
 We thank the following repos providing helpful components/functions in our work.
