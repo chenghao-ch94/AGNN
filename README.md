@@ -46,7 +46,6 @@ python train_meta.py --config configs/train_meta_mini.yaml
   journal={arXiv preprint arXiv:2007.06878},
   year={2020}
 }
-
 ```
 
 ## Acknowledgment
