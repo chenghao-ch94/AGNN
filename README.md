@@ -43,14 +43,9 @@ The pretrained Classifier-Baselines can be downloaded from Google Drive. You can
 python train_meta.py --config configs/train_meta_mini.yaml
 ```
 
-### Citation
+### Citation (Update Soon)
 ```
-@article{cheng2020attentive,
-  title={Attentive graph neural networks for few-shot learning},
-  author={Cheng, Hao and Zhou, Joey Tianyi and Tay, Wee Peng and Wen, Bihan},
-  journal={arXiv preprint arXiv:2007.06878},
-  year={2020}
-}
+
 ```
 
 ## Acknowledgment
