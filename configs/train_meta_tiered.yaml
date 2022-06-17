@@ -1,0 +1,26 @@
+train_dataset: tiered-imagenet
+train_dataset_args: {split: train, augment: resize}
+tval_dataset: tiered-imagenet
+tval_dataset_args: {split: test}
+val_dataset: tiered-imagenet
+val_dataset_args: {split: val}
+
+model: gnn
+model_args: 
+    encoder: convnet4_128
+    encoder_args: {}
+   
+load_encoder: ./save/classifier_tiered-imagenet_convnet4_128/epoch-last.pth
+
+n_way: 5
+n_shot: 5
+n_query: 5
+train_batches: 12 
+test_batches: 20 
+ep_per_batch: 12
+
+max_epoch: 15000
+optimizer: adam
+optimizer_args: {lr: 0.001, weight_decay: 1.e-5}
+
+visualize_datasets: False #True
