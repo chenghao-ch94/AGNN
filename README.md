@@ -27,7 +27,7 @@ By default it is 1-shot, modify `shot` in config file for other shots. Models ar
 
 *The models on *miniImageNet* and *tieredImageNet* use ConvNet-4 as backbone, the channels in each block are **64-96-128-256**.
 
-### 1. Training Classifier-Baseline
+### 1. Pretraining the ConvNet4 Backbone
 ```
 python train_classifier.py --config configs/train_classifier_mini.yaml
 ```
