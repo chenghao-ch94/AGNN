@@ -9,7 +9,7 @@ This repository contains the code for [Attentive Graph Neural Networks for Few-S
 
 **Environment**
 - Python 3.7.3
-- Pytorch 1.2.0
+- Pytorch 1.7.1
 - tensorboardX
 
 **Datasets**
