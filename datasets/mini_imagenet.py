@@ -11,7 +11,6 @@ import numpy as np
 
 import os.path as osp
 
-
 @register('mini-imagenet')
 class MiniImageNet(Dataset):
 
@@ -62,64 +61,8 @@ class MiniImageNet(Dataset):
                 transforms.Normalize(np.array([x / 255.0 for x in [125.3, 123.0, 113.9]]),
                                      np.array([x / 255.0 for x in [63.0, 62.1, 66.7]]))])
 
-        # split_tag = split
-        # if split == 'train':
-        #     split_tag = 'train_phase_train'
-        # split_file = 'miniImageNet_category_split_{}.pickle'.format(split_tag)
-        # with open(os.path.join(root_path, split_file), 'rb') as f:
-        #     pack = pickle.load(f, encoding='latin1')
-        # data = pack['data']
-        # label = pack['labels']
-
-        # image_size = 84
-        # data = [Image.fromarray(x) for x in data]
-
-        # min_label = min(label)
-        # label = [x - min_label for x in label]
-        
-        # self.data = data
-        # self.label = label
-        # self.n_classes = max(self.label) + 1
-
-        # self.default_transform = transforms.Compose([
-        #     transforms.Resize([92,92]),
-        #     transforms.CenterCrop(image_size),
-        #     transforms.ToTensor(),
-        #     transforms.Normalize(np.array([x / 255.0 for x in [125.3, 123.0, 113.9]]),
-        #                 np.array([x / 255.0 for x in [63.0, 62.1, 66.7]]))
-        # ])
-        # augment = kwargs.get('augment')
-        # if augment == 'resize':
-        #     self.transform = transforms.Compose([
-        #         transforms.RandomResizedCrop(image_size),
-        #         transforms.RandomHorizontalFlip(),
-        #         transforms.ToTensor(),
-        #         # normalize,
-        #         transforms.Normalize(np.array([x / 255.0 for x in [125.3, 123.0, 113.9]]),
-        #                     np.array([x / 255.0 for x in [63.0, 62.1, 66.7]]))
-        #     ])
-        # elif augment == 'crop':
-        #     self.transform = transforms.Compose([
-        #         transforms.RandomResizedCrop(image_size),
-        #         transforms.RandomHorizontalFlip(),
-        #         transforms.ToTensor(),
-        #         transforms.Normalize(np.array([x / 255.0 for x in [125.3, 123.0, 113.9]]),
-        #                     np.array([x / 255.0 for x in [63.0, 62.1, 66.7]]))
-        #     ])
-        # elif augment is None:
-        #     self.transform = self.default_transform
-
-        # def convert_raw(x):
-        #     mean = torch.tensor(norm_params['mean']).view(3, 1, 1).type_as(x)
-        #     std = torch.tensor(norm_params['std']).view(3, 1, 1).type_as(x)
-        #     return x * std + mean
-        # self.convert_raw = convert_raw
-
     def __len__(self):
         return len(self.data)
-
-    # def __getitem__(self, i):
-    #     return self.transform(self.data[i]), self.label[i]
 
     def __getitem__(self, i):
         path, label = self.data[i], self.label[i]
