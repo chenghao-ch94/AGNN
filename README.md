@@ -52,9 +52,8 @@ python train_meta.py --config configs/train_meta_mini.yaml
 }
 ```
 
-### Citation (Extension is accepted by IEEE Transactions on Multimedia, Update Soon)
-```
-```
+### Extension is accepted by IEEE Transactions on Multimedia, Update Soon
+
 
 
 
