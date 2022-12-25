@@ -40,15 +40,23 @@ You can unzip and place the foder under the 'save' folder.
 python train_meta.py --config configs/train_meta_mini.yaml
 ```
 
-### Citation (Update Soon)
+### Citation
 ```
-@article{cheng2020attentive,
+@inproceedings{cheng2022attentive,
   title={Attentive graph neural networks for few-shot learning},
   author={Cheng, Hao and Zhou, Joey Tianyi and Tay, Wee Peng and Wen, Bihan},
-  journal={arXiv preprint arXiv:2007.06878},
-  year={2020}
+  booktitle={2022 IEEE 5th International Conference on Multimedia Information Processing and Retrieval (MIPR)},
+  pages={152--157},
+  year={2022},
+  organization={IEEE}
 }
 ```
+
+### Citation (Extension is accepted by IEEE Transactions on Multimedia, Update Soon)
+```
+```
+
+
 
 ## Acknowledgment
 We thank the following repos providing helpful components/functions in our work.
