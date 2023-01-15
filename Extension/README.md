@@ -93,3 +93,5 @@ We thank the following repos providing helpful components/functions in our work.
 - [Few-shot Meta-Baseline](https://github.com/yinboc/few-shot-meta-baseline)
 
 - [DPGN: Distribution Propagation Graph Network for Few-shot Learning](https://github.com/megvii-research/DPGN)
+
+- [FEAT](https://github.com/Sha-Lab/FEAT)
