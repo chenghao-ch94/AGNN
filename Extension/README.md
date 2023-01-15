@@ -65,11 +65,9 @@ The dataset directory should look like this:
 To train the model(s) in the paper, run:
 
 ```
-
 python3 main_gnn.py --dataset_root dataset --config config/5way_1shot_convnet_mini-imagenet.py --num_gpu 1 --mode train
 
 python3 main_gnn.py --dataset_root dataset --config config/5way_1shot_convnet_tiered-imagenet.py --num_gpu 1 --mode train
-
 ```
 
 
