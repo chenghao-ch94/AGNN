@@ -51,11 +51,17 @@ python train_meta.py --config configs/train_meta_mini.yaml
   organization={IEEE}
 }
 ```
-
 ### Extension is accepted by IEEE Transactions on Multimedia, Update Soon
 
-
-
+```
+@article{cheng2023graph,
+  title={Graph Neural Networks With Triple Attention for Few-Shot Learning},
+  author={Cheng, Hao and Zhou, Joey Tianyi and Tay, Wee Peng and Wen, Bihan},
+  journal={IEEE Transactions on Multimedia},
+  year={2023},
+  publisher={IEEE}
+}
+```
 
 ## Acknowledgment
 We thank the following repos providing helpful components/functions in our work.
@@ -65,3 +71,4 @@ We thank the following repos providing helpful components/functions in our work.
 
 - [Few-shot Meta-Baseline](https://github.com/yinboc/few-shot-meta-baseline)
 
+- [DPGN: Distribution Propagation Graph Network for Few-shot Learning](https://github.com/megvii-research/DPGN)
